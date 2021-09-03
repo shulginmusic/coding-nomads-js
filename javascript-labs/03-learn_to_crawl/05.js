@@ -25,3 +25,29 @@
  * support for it is not everywhere.
  */
 
+let myName, greeting, friendName, relativeName;
+let day, month, year, age;
+
+// *      1. A greeting to your friend
+friendName = "Ryan";
+console.log(`Hello, ${friendName}`);
+
+// *      2. A greeting to your family member
+relativeName = "Sergei";
+console.log('Hello, ' + relativeName);
+
+// A greeting to your friend stating today's date and month
+day = 3;
+month = "September";
+year = 2021;
+
+console.log(`Hello, ${friendName}, today is the ${day} of ` + month + ", " + year);
+
+// 4. A sentence that says something along the lines of "In 20 years I will
+//  *         be XXX years old". For this, don't use any more variables. That is,
+//  *         make your script calculate the age with the variable you already have
+//  *         that contains the year.
+myName = "Efim";
+age = 26;
+console.log(`In 40 years, ${myName} will be ${age + 40} years old`);
+

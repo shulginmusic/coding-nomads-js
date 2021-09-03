@@ -21,5 +21,26 @@
  * with clear and descriptive names.
  */
 
-let result = 0
-console.log("Label", result)
+let x, y, z;
+
+x = 1234;
+y = 2345; 
+z = 3456;
+
+console.log(z / (y - x ));
+console.log((x + y + z) % 7);
+
+const labelOne = "The sum of the numbers."
+console.log(labelOne, (x + y + z));
+
+const labelTwo = "The result of subtracting the two smallest numbers from the larger one."
+console.log(labelTwo, (z - y - x));
+
+const labelThree = "The result of multiplying all the numbers."
+console.log(labelThree, (x * y * z));
+
+const labelFour = "The result of the largest number divided by the difference between the smaller ones."
+console.log(labelFour, (z / (y - x )));
+
+const labelFive = "The result of the the numbers modulo 7."
+console.log(labelFive, ((x + y + z) % 7));
