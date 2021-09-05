@@ -40,7 +40,45 @@ function getRandomNumber(){
  *
  */
 
-let randomNumber = getRandomNumber() + getRandomNumber()
+// let randomNumber = getRandomNumber() + getRandomNumber()
 
-console.log(randomNumber)
+// console.log(randomNumber)
+
+let age, price, fare;
+
+age = getRandomNumber() * 10;
+// console.log(age);
+price = 0;
+fare = "";
+
+let lucky = getRandomNumber();
+console.log("Are you lucky? - " + lucky);
+
+if (lucky === 5) {
+    fare = "Lucky fare!"
+} else {
+    if (age < 5) {
+        price = 0;
+        fare = "Free fare";
+    } else if (age >= 5 && age < 13) {
+        price = 2;
+        fare = "Child fare";
+    } else if (age >= 13 && age < 21) {
+        price = 3;
+        fare = "Teen fare";
+    } else if (age >= 21 && age < 30) {
+        price = 5;
+        fare = "Young person fare";
+    } else if (age >= 30 && age < 65) {
+        price = 5000;
+        fare = "Adult fare";
+    } else {
+        price = 1;
+        fare = "Senior fare";
+    }
+}
+
+
+console.log("You are " + age + " years old");
+console.log(`Please pay ${price} dollars, the ${fare}`);
 

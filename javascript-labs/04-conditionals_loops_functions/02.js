@@ -14,3 +14,23 @@
  * find both ways!
  *
  */
+
+
+//1
+for (i = 5; i < 1000; i += 5) {
+    console.log(i);
+}
+
+console.log("--------------");
+
+//2
+for (i = 100; i >= -100; i--) {
+    console.log(i);
+}
+
+//3
+for (i = 0; i < 2500; i += 3) {
+    console.log(i);
+    i--;
+    console.log(i);
+}
